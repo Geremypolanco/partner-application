@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Partner — Build &amp; Lead Your Own Sales Team | Polanco Digital Services</title>
+<meta name="description" content="Partner with Polanco Digital Services: recruit, train and lead your own remote sales team. Revenue share, no cap, monthly recurring income.">
+<style>
+  :root{
+    --navy:#1A3A5C; --navy-dark:#122A44; --gold:#C9A227; --gold-light:#E4C65B;
+    --ink:#1f2937; --muted:#5b6470; --bg:#f7f8fa; --card:#ffffff; --line:#e5e7eb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  /* HERO */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-dark) 100%);color:#fff;padding:72px 0 64px;text-align:center}
+  .hero .kicker{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);border:1px solid rgba(201,162,39,.5);border-radius:999px;padding:6px 16px;margin-bottom:20px}
+  .hero h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin-bottom:16px}
+  .hero h1 .gold{color:var(--gold-light)}
+  .hero p.sub{font-size:18px;color:#d7dee8;max-width:640px;margin:0 auto 30px}
+  .btn{display:inline-block;background:var(--gold);color:#1a1a1a;font-weight:700;font-size:17px;padding:15px 42px;border-radius:10px;text-decoration:none;border:none;cursor:pointer;transition:transform .12s ease, box-shadow .12s ease}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(201,162,39,.35)}
+  .btn-navy{background:var(--navy);color:#fff}
+  /* SECTIONS */
+  section.block{padding:56px 0}
+  section.block h2{font-size:28px;color:var(--navy);margin-bottom:8px;text-align:center}
+  section.block .lede{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 32px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:700px){.grid2{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card h3{color:var(--navy);font-size:18px;margin-bottom:10px}
+  .card p,.card li{color:var(--muted);font-size:15.5px}
+  .card ul{padding-left:20px}
+  .card li{margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;margin-right:10px;flex-shrink:0}
+  .step{display:flex;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:14px}
+  .step h3{color:var(--navy);font-size:17px;margin-bottom:4px}
+  .step p{color:var(--muted);font-size:15px}
+  .nda-note{background:#fff8e6;border:1px solid var(--gold);border-radius:12px;padding:18px 22px;text-align:center;color:#6b5a1e;font-size:15.5px;margin-top:26px}
+  /* FORM */
+  #apply{background:var(--navy);color:#fff}
+  #apply h2{color:#fff}
+  #apply .lede{color:#c7d2e0}
+  form{background:#fff;color:var(--ink);border-radius:16px;padding:34px;max-width:680px;margin:0 auto}
+  @media(max-width:560px){form{padding:24px 18px}}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-weight:600;font-size:14.5px;margin-bottom:6px;color:var(--navy)}
+  .field label .req{color:#c0392b}
+  .field input[type=text],.field input[type=email],.field input[type=tel],.field input[type=url],.field select,.field textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:9px;font-size:15.5px;font-family:inherit;background:#fcfcfd}
+  .field textarea{min-height:110px;resize:vertical}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(26,58,92,.12)}
+  .check{display:flex;gap:10px;align-items:flex-start;margin-bottom:14px;font-size:15px}
+  .check input{margin-top:5px;width:17px;height:17px;accent-color:var(--navy)}
+  .resume-note{background:#eef4fb;border:1px dashed var(--navy);border-radius:10px;padding:14px 16px;font-size:14.5px;color:var(--navy);margin-bottom:20px}
+  .error{display:none;background:#fdecea;color:#8f1d1d;border:1px solid #f5c6c6;border-radius:9px;padding:12px 16px;margin-bottom:18px;font-size:14.5px}
+  .success{display:none;background:#e9f7ef;color:#1d6b3a;border:1px solid #bfe6cd;border-radius:9px;padding:16px;margin-top:18px;font-size:15px}
+  footer{background:var(--navy-dark);color:#9fb0c3;text-align:center;padding:28px 20px;font-size:14px}
+  footer strong{color:#fff}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Polanco Digital Services · York, PA</span>
+    <h1>Business Partner<br><span class="gold">Build &amp; Lead Your Own Sales Team</span></h1>
+    <p class="sub">A real partnership for builders: recruit, train and lead your own remote sales team selling digital services to small businesses across the USA. 100% remote. Performance-based, no cap.</p>
+    <a class="btn" href="#apply">Apply Now</a>
+  </div>
+</header>
+
+<section class="block">
+  <div class="wrap">
+    <h2>The Opportunity</h2>
+    <p class="lede">You run your team like your own business. We give you everything you need to win: the brand, the scripts, the pricing, the training materials — and we deliver the finished product to every client your team closes.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>What you'll do</h3>
+        <ul>
+          <li>Recruit and interview sales reps for <strong>your</strong> team</li>
+          <li>Train them with our scripts, systems and playbooks — we hand you everything</li>
+          <li>Lead daily activity: prospecting, follow-ups and closings</li>
+          <li>Track your team's numbers on the weekly payout sheet</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What you get</h3>
+        <ul>
+          <li>Revenue share on everything your team closes — performance-based, <strong>no cap</strong></li>
+          <li>Your team earns their share on every sale they close</li>
+          <li><strong>Monthly recurring revenue:</strong> subscriptions your team sells keep paying you month after month</li>
+          <li>We handle branding, systems, training content, fulfillment and payment processing</li>
+          <li>Work 100% remote, set your own schedule</li>
+        </ul>
+      </div>
+    </div>
+    <div class="nda-note">Exact figures are shared after a standard NDA.</div>
+  </div>
+</section>
+
+<section class="block" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2>Requirements</h2>
+    <p class="lede">This is a partnership, not a salaried job. It's 100% commission-based — built for people who want to earn like owners.</p>
+    <div class="grid2">
+      <div class="card"><h3>✔ Fluent English</h3><p>Spoken and written — you'll lead a US-based team.</p></div>
+      <div class="card"><h3>✔ Leadership experience</h3><p>You've managed, coached or trained people before.</p></div>
+      <div class="card"><h3>✔ Self-driven</h3><p>You don't wait to be told what to do. You build.</p></div>
+      <div class="card"><h3>✔ Your own phone &amp; computer · 18+</h3><p>The only tools you need to run your team.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="lede">Four steps from application to launch.</p>
+    <div class="step"><span class="num">1</span><div><h3>Apply below</h3><p>Tell us about yourself and your leadership experience. Attach your resume.</p></div></div>
+    <div class="step"><span class="num">2</span><div><h3>Interview</h3><p>If you pass the initial screening, we'll invite you to a brief interview.</p></div></div>
+    <div class="step"><span class="num">3</span><div><h3>Sign the NDA</h3><p>A standard confidentiality agreement before we share the numbers.</p></div></div>
+    <div class="step"><span class="num">4</span><div><h3>Launch your team</h3><p>Get the full compensation details, the playbooks, and start recruiting.</p></div></div>
+  </div>
+</section>
+
+<section class="block" id="apply">
+  <div class="wrap">
+    <h2>Apply Now</h2>
+    <p class="lede">Complete every field. Serious inquiries only.</p>
+    <form id="appForm" novalidate>
+      <div class="error" id="formError"></div>
+      <div class="field">
+        <label for="f_name">Full name <span class="req">*</span></label>
+        <input type="text" id="f_name" autocomplete="name" placeholder="Jane Smith">
+      </div>
+      <div class="field">
+        <label for="f_email">Email <span class="req">*</span></label>
+        <input type="email" id="f_email" autocomplete="email" placeholder="jane@email.com">
+      </div>
+      <div class="field">
+        <label for="f_phone">Phone <span class="req">*</span></label>
+        <input type="tel" id="f_phone" autocomplete="tel" placeholder="(555) 123-4567">
+      </div>
+      <div class="field">
+        <label for="f_city">City / State <span class="req">*</span></label>
+        <input type="text" id="f_city" autocomplete="address-level2" placeholder="York, PA">
+      </div>
+      <div class="field">
+        <label for="f_linkedin">LinkedIn profile URL <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+        <input type="url" id="f_linkedin" placeholder="https://linkedin.com/in/...">
+      </div>
+      <div class="field">
+        <label for="f_lead">Tell us about teams you've led — be specific <span class="req">*</span></label>
+        <textarea id="f_lead" placeholder="Team size, what you sold or built, how long, results..."></textarea>
+      </div>
+      <div class="field">
+        <label for="f_why">Why do you want this partnership? <span class="req">*</span></label>
+        <textarea id="f_why" placeholder="What drives you? What will you bring to the table?"></textarea>
+      </div>
+      <div class="field">
+        <label for="f_hours">How many hours per week can you dedicate? <span class="req">*</span></label>
+        <select id="f_hours">
+          <option value="">Select...</option>
+          <option>Less than 10</option>
+          <option>10–20</option>
+          <option>20–30</option>
+          <option>30+ (full-time builder)</option>
+        </select>
+      </div>
+      <label class="check"><input type="checkbox" id="f_18"> <span>I confirm I am 18 years or older <span class="req">*</span></span></label>
+      <label class="check"><input type="checkbox" id="f_en"> <span>I am fluent in English, spoken and written <span class="req">*</span></span></label>
+      <div class="resume-note">📎 <strong>Resume:</strong> after clicking Submit, your email app will open with your application ready to send — <strong>please attach your resume before sending it.</strong></div>
+      <button type="submit" class="btn btn-navy" style="width:100%">Submit Application</button>
+      <div class="success" id="formSuccess">Your email app should now be open with your application ready — <strong>attach your resume and hit send</strong> to complete your application. We'll review it and get back to you within 48 hours.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <strong>Polanco Digital Services</strong> · York, PA<br>
+  Serious inquiries only. This is a partnership for builders, not a job for spectators.
+</footer>
+
+<script>
+document.getElementById('appForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var err = document.getElementById('formError');
+  var ok = document.getElementById('formSuccess');
+  err.style.display = 'none'; ok.style.display = 'none';
+  function v(id){ return document.getElementById(id).value.trim(); }
+  var name = v('f_name'), email = v('f_email'), phone = v('f_phone'),
+      city = v('f_city'), linkedin = v('f_linkedin') || '—',
+      lead = v('f_lead'), why = v('f_why'), hours = v('f_hours');
+  var is18 = document.getElementById('f_18').checked;
+  var isEn = document.getElementById('f_en').checked;
+  var problems = [];
+  if(!name) problems.push('full name');
+  if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) problems.push('a valid email');
+  if(!phone) problems.push('phone');
+  if(!city) problems.push('city / state');
+  if(!lead) problems.push('your leadership experience');
+  if(!why) problems.push('why you want this partnership');
+  if(!hours) problems.push('hours per week');
+  if(!is18) problems.push('the 18+ confirmation');
+  if(!isEn) problems.push('the English fluency confirmation');
+  if(problems.length){
+    err.textContent = 'Please complete: ' + problems.join(', ') + '.';
+    err.style.display = 'block';
+    err.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+  var body =
+    'BUSINESS PARTNER APPLICATION\n' +
+    '============================\n\n' +
+    'Name: ' + name + '\n' +
+    'Email: ' + email + '\n' +
+    'Phone: ' + phone + '\n' +
+    'City / State: ' + city + '\n' +
+    'LinkedIn: ' + linkedin + '\n' +
+    'Hours per week: ' + hours + '\n' +
+    '18 or older: Yes\n' +
+    'Fluent English: Yes\n\n' +
+    'LEADERSHIP EXPERIENCE\n---------------------\n' + lead + '\n\n' +
+    'WHY THIS PARTNERSHIP\n---------------------\n' + why + '\n\n' +
+    '(Resume attached separately)';
+  var mailto = 'mailto:geremypolancod@gmail.com' +
+    '?subject=' + encodeURIComponent('Business Partner Application — ' + name) +
+    '&body=' + encodeURIComponent(body);
+  window.location.href = mailto;
+  ok.style.display = 'block';
+  ok.scrollIntoView({behavior:'smooth', block:'center'});
+});
+</script>
+</body>
+</html>
